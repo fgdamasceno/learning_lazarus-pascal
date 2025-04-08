@@ -1,0 +1,73 @@
+Lazarus + Free Pascal
+YouTube -> SchoolFreeware
+- Free Pascal Program Tutorials (Command Line Interface);
+- Free Pascal App Tutorials (Window Type)
+
+* Criar novo programa:
+  Arquivo > Novo > Projeto > Programa
+* Salvar programa:
+  Arquivo > Salvar
+* Construir programa:
+  Executar > Construir --> Gera um executável (stand alone)
+
+OBS.: o código fonte do programa fica em um arquivo com extensão .lpr,
+      Lazarus Project Main Source
+
+>>> ESCREVER NO CONSOLE:
+* Printar na tela:
+  write('texto'); --> escreve no console sem quebra de linhas
+  writeln('texto'); --> escreve na tela com quebra de linhas
+  OBS.: uma string deve estar entre 'aspas simples'!
+  OBS.: ao executar um programa com o comando acima, uma tela do console irá se
+        abrir, exibir o texto e fechar automaticamente. Para evitar isso, 
+        mantendo a tela aberta, temos que usar o comando abaixo na sequência:
+  readln; --> recebe uma entrada do usuário e também impede que a janela se feche,
+              até que a tecla <ENTER> seja apertada.
+  OBS.: não utilizar acentos gráficos ou letras que não existam na língua inglesa!
+
+EXEMPLO BÁSICO DE CÓDIGO:
++----------------------------------------+
+program learningprogram001;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}
+  cthreads,
+  {$ENDIF}
+  Classes
+  { you can add units after this };
+
+var nome: string;
+
+begin
+  writeln('Digite o seu nome: ');
+  readln(nome);
+  writeln('Ola, ', nome, '!');
+  readln;
+end.
++----------------------------------------+
+
+>>> MATEMÁTICA BÁSICA
+* Operadores matemáticos:
+  +, -, *, /, div (divisão de inteiros), mod (resto da divisão)
+* Ordem de operações:
+  parenteses, exponentes, multiplicação, divisão, adição, subtração
+  OBS.: por padrão, Pascal retorna notação científica após divisão.
+        Ex.: 10/2 = 5.0000000000000000E+000
+             10/3 = 3.3333333333333335E+000
+        Para evitar isto, utiliza-se as seguintes notações:
+        10/3:0:2 = 3.33 (10 dividido por 3 com 0 espaço à direita e 2 casas decimais)
+        10/3:5:2 =  3.33 (10 dividido por 3 com 1 espaço à direita e 2 casas decimais)
+        OBS.: como o resultado é alinhado à direita, o número 5 representa um espaço
+              antes do resultado, pois 3.33 tem 4 caracteres, e para termos o espaço,
+              que totalizariam 5 caracteres, adicionamos o número 5 após o divisor.
+  OBS.: uso de 'mod' e 'div'
+        --> mod: 10 mod 3 (resultado: exibe o resto da operação)
+        --> div: 10 div 3 (resultado: exibe quantas vezes um número é divisível pelo
+                          divisor)
+
+>>> VARIÁVEIS E TIPOS DE DADOS
+
+
+
