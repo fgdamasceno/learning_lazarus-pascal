@@ -21,16 +21,18 @@ begin
   writeln('Meu nome e ', name, '.');
 
   num1 := 1982; // ATRIBUICAO DE VALOR
-  writeln('Nasci no ano de ', num1, '.');
+  writeln('Em  ', num1, ', Venom lancou o album "Black Metal".');
 
-  num1 := 2025 - 1982; // REATRIBUICAO DE VALOR
-  writeln('Em 2025 eu tinha ', num1, ' anos de idade.');
+  num1 := 1982 - 1980; // REATRIBUICAO DE VALOR
+  writeln(num1, ' anos apos o lancamento de "Ace of Spades" pelo Motorhead.');
 
-  num2 := 23.0;
-  writeln('Hoje tenho ', num2:0:2, ' na carteira.');
+  num2 := 10 / 3;
+  writeln('A divisao de 10 por 3 e igual a ', num2:0:2, '.');
 
-  c := 'D';
-  writeln('Meu ultimo nome e ', c, 'amasceno.');
+  c := 'P';
+  write(c, ' de Pascal');
+  c := 'L';
+  write(' e ', c, ' de Lazarus.');
 
 
   writeln;

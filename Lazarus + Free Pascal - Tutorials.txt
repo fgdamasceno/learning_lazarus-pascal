@@ -68,6 +68,20 @@ end.
                           divisor)
 
 >>> VARIÁVEIS E TIPOS DE DADOS
+* Declaração de variáveis:
+  - A variável é declarada e tipada antes da palavra-chave 'begin';
+  - Usá-se a palavra chave var, pulá-se para a próxima linha, digitá-se o nome da variável
+  seguido de dois pontos (:) e o tipo de dado que será armazenado nesta variável e 
+  finalizá-se com ponto-e-vírgula (;);
+  - Nome de variáveis não podem ser iniciados com números;
+  - O valor será atribuído à variável após a palavra-chave 'begin';
+  - Para atribuir um valor à variável, digitá-se o nome da variável seguido de dois-pontos (:)
+  mais o operador de atribuição (=) seguido do valor que será atribuído à variável. Valor
+  do tipo 'string' deve ser digitado entre aspas simples (' ');
+  - Variáveis podem ter seus valores reatribuídos;
+  
+* Tipos de dados:
+  Integer, Real (float), String, Char, Boolean
 
 
 
