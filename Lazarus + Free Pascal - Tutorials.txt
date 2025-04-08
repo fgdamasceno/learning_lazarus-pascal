@@ -203,6 +203,85 @@ begin
 end.
 +----------------------------------------+
 
+CASE STATEMENTS
+* Caracteristicas: Similar ao 'if statement'; de leitura mais fácil; entendimento mais
+  fácil; compacto; pode ser mais rápido que o 'if statement'; não aceita variáveis do tipo
+  string.
+  SINTAXE:
+    case <variable> of
+    condition:begin
+        do something
+      end;
+    end;
+* A condição não aceita comparação. Para selecionar valores que estejam dentro de um
+  intervalo, utilizá-se '..', como em 0..10 (entre 0 e 10)
+    Ex.:
+      case valor of
+      0..10:begin
+          writeln('Valor entre 0 e 10');
+        end;
+      11..20:begin
+          writeln('Valor entre 10 e 20');
+        end;
+      end;
+* Para casos com letras, podemos utilizar da seguinte forma, pois o usuário pode digitar
+  de ambas maneiras:
+    Ex.:
+      (...)
+      'A','a':begin // o usuário pode digitar 'A' ou 'a'
+         (...)
+        end;
+* Aceita else:
+    Ex.: 
+      (...)
+        end;
+      else begin
+        writeln('Something');
+      end;
+
+EXEMPLO BÁSICO DE CÓDIGO:
++----------------------------------------+
+program casestatements;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}
+  cthreads,
+  {$ENDIF}
+  Classes
+  { you can add units after this };
+
+var
+  hora:integer;
+
+begin
+
+  write('Que horas sao (Ex.: 10)? ');
+  readln(hora);
+
+  case hora of
+  0..11:begin
+    writeln('Bom dia!');
+    end;
+  12..17:begin
+    writeln('Boa tarde!');
+    end;
+  18..23:begin
+    writeln('Boa noite!');
+    end;
+  else begin
+    writeln('Nao foi digitado um valor valido');
+    end
+  end;
+
+  writeln;
+  writeln('Press <Enter> to quit.');
+  readln;
+end.
++----------------------------------------+
+
+
 
   
 
