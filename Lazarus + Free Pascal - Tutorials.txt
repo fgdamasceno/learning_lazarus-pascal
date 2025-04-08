@@ -83,5 +83,8 @@ end.
 * Tipos de dados:
   Integer, Real (float), String, Char, Boolean
 
+>>> ENTRADAS PELO USUÁRIO
+
+
 
 
