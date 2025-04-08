@@ -84,6 +84,47 @@ end.
   Integer, Real (float), String, Char, Boolean
 
 >>> ENTRADAS PELO USUÁRIO
+  Uma forma prática para receber dados do usuário é solicitando que o mesmo insira dados (write();
+  ou writeln();) e receber os dados digitados (readln();) e atribuir estes dados à variáveis.
+
+EXEMPLO BÁSICO DE CÓDIGO:
++----------------------------------------+
+program userinput;
+
+{$mode objfpc}{$H+}
+
+uses
+  {$IFDEF UNIX}
+  cthreads,
+  {$ENDIF}
+  Classes
+  { you can add units after this };
+
+var // DECLARACAO DAS VARIAVEIS
+  fname:string;
+  lname:string;
+  num1:integer;
+  num2:integer;
+
+begin
+  write('Enter first name: '); // SOLICITACAO DE DADOS DO USUARIO
+  readln(fname); // RECEBIMENTO E ATRIBUICAO DE DADOS A VARIAVEIS
+  write('Enter last name: ');
+  readln(lname);
+  writeln;
+  writeln('Nice to meet you ', fname, ' ', lname, '.');
+  write('Enter first integer: ');
+  readln(num1);
+  write('Enter second integer: ');
+  readln(num2);
+  writeln;
+  writeln('The sum of the integers: ', num1 + num2);
+  writeln;
+
+  writeln('Press <Enter> to quit!');
+  readln;
+end.
++----------------------------------------+
 
 
 
