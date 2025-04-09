@@ -3,6 +3,8 @@ YouTube -> SchoolFreeware
 - Free Pascal Program Tutorials (Command Line Interface);
 - Free Pascal App Tutorials (Window Type)
 
+- VER: https://github.com/fgdamasceno/learning_lazarus-pascal
+
 * Criar novo programa:
   Arquivo > Novo > Projeto > Programa
 * Salvar programa:
@@ -332,7 +334,39 @@ begin
 end.
 +----------------------------------------+
 
-  
+REPEAT UNTIL LOOP
+* Sintaxe:
+    repeat
+      do something;
+    until <condition>
+* Aceita operadores relacionais (<, <=, >, >=, = (igual a; ':=' é o operador de atribuição), <> (not equal));
 
+FOR LOOP
+* Sintaxe:
+    for low to high do
+    begin
+      do something;
+    end;
 
+    for high down to low do
+    begin
+      do something;
+    end;
 
+EXEMPLO BÁSICO DE CÓDIGO:
++----------------------------------------+
+var
+  x:integer; //COUNTER
+
+begin
+
+  for x:=1 to 10 do
+  begin
+    writeln(x);
+  end;
+
+  writeln;
+  writeln('Press <Enter> to quit.');
+  readln;
+end.
++----------------------------------------+
