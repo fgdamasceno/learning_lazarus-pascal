@@ -423,4 +423,10 @@ OBS.: em Pascal, ';' (ponto e vírgula) não é um fim de instrução, como no J
             writeln('A correct day was not entered');
           end;
 
+RANDOM NUMBERS
+* randomize; --> garante que a sequência de números aleatórios seja diferente a
+                 cada vez que o programa for executado.
+* random(x); --> função que retorna um número inteiro aleatório entre 0 e x-1
+                 Ex.: random(10); - pode retornar um número aleatório de 0 a 9.
+
 
