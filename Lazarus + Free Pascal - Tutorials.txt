@@ -370,3 +370,13 @@ begin
   readln;
 end.
 +----------------------------------------+
+
+INPUT VALIDATION
+* Utilizado para verificar se as entradas do usuário estão de acordo com o esperado;
+* Como evitar que o programa "quebre" em caso de entradas incorretas/inesperadas;
+  Uso do repeat/until com operadores lógicos para não parar o programa após entrada
+  de dados incorretos, voltando ao ponto de entrada até que a entrada correta seja
+  efetuada.
+* Operadores Lógicos: And, Or;
+
+
