@@ -374,9 +374,53 @@ end.
 INPUT VALIDATION
 * Utilizado para verificar se as entradas do usuário estão de acordo com o esperado;
 * Como evitar que o programa "quebre" em caso de entradas incorretas/inesperadas;
-  Uso do repeat/until com operadores lógicos para não parar o programa após entrada
-  de dados incorretos, voltando ao ponto de entrada até que a entrada correta seja
-  efetuada.
+    Uso do repeat/until com operadores lógicos para não parar o programa após entrada
+    de dados incorretos, voltando ao ponto de entrada até que a entrada correta seja
+    efetuada.
+    Programas geralmente 'quebram' quando tipo incorreto de dados é atribuído a uma 
+    variável do tipo numérico.
+    * Uso da função 'Val' para checar valores incompatíveis.
+      Esta função pode converter 'string' para valor numérico.
 * Operadores Lógicos: And, Or;
+
+MENUS FOR USER FRIENDLY PROGRAMS
+* Organizam o input;
+* Organizam o programa;
+* Mostra ao usuário o que o programa é capaz de fazer;
+* Ajudam o usuário a entrar com o tipos e dados corretos.
+
+OBS.: em Pascal, ';' (ponto e vírgula) não é um fim de instrução, como no JavaScript ou Java,
+      mas sim um separador de instruções.
+      Por este motivo, em um 'if statement', o ';' só utilizado após a última instrução:
+      Ex:
+        var
+          x:integer;
+        begin
+        x := 10
+        if num < 0 then
+          writeln('Wrong Number')
+        else if num > 10 then
+          writeln('Wrong Number')
+        else if num = 10 then
+          writeln('Right Number')
+        else
+          writeln('Wrong choice');
+      
+        Para evitar este tipo de situação, utilizá-se 'begin' após o 'then' e 'end' antes
+        do 'else':
+        Ex.:
+          if day = 'monday' then
+          begin
+            writeln('Monday homework');
+          end
+            else if day = 'tuesday' then
+          begin
+            writeln('Tuesday homework');
+          end
+            ...
+          else
+          begin
+            writeln('A correct day was not entered');
+          end;
 
 

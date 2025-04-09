@@ -12,6 +12,9 @@ uses
 var
   selection:char;
   num:real;
+  num2:integer;
+  error:integer;
+  userInput:string;
 
 begin
 
@@ -35,6 +38,15 @@ begin
   until (num >= 1) and (num <= 10) ;
 
   writeln('The number squared: ', num * num:0:2);
+
+  // CHECANDO INCOMPATIBILIDADE DE DADOS NA ENTRADA
+  repeat
+    write('Enter an integer: ');
+    readln(userInput);
+    val(userInput, num2, error);
+  until error = 0;
+
+  writeln('Your number: ', num2);
 
 
   writeln;
