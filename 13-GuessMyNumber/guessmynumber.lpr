@@ -24,13 +24,16 @@ begin
 
     repeat
       clrscr; // LIMPA A TELA E PRINTA O CODIGO ABAIXO
+      textcolor(4);
       writeln('Please Select A game:');
       writeln;
+      textcolor(2);
       writeln('A) 10');
       writeln('B) 100');
       writeln('C) 1000');
       writeln;
       write('Enter Selection: ');
+      textcolor(3);
       readln(game);
     until (game = 'A') or (game = 'a')
       or (game = 'B') or (game = 'b')
