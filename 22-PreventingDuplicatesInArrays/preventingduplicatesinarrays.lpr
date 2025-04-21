@@ -51,7 +51,7 @@ begin
   writeln('The names in the array: ');
   writeln;
   for x := 1 to 5 do
-  writeln(names[x]);
+    writeln(names[x]);
 
 
   quit;
