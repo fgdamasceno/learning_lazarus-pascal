@@ -1,4 +1,4 @@
-program separatingstringswithasciicodes;
+program separatingstringswithranges;
 
 {$mode objfpc}{$H+}
 
@@ -30,10 +30,10 @@ begin
 
   for x := 1 to length(s) do
   begin
-    if ((ord(s[x]) > 64) and (ord(s[x]) < 91)) or ((ord(s[x]) > 96) and (ord(s[x]) < 123)) then
-       letters := letters + s[x]
-    else if ((ord(s[x]) > 47) and (ord(s[x]) < 58)) then
-      numbers := numbers + s[x]
+    if s[x] in ['A'..'Z','a'..'z'] then
+    letters := letters + s[x]
+    else if s[x] in ['0'..'9'] then
+    numbers := numbers + s[x]
     else
       others := others + s[x];
   end;
@@ -46,4 +46,3 @@ begin
 
   quit;
 end.
-
