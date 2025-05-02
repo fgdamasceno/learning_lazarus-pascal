@@ -1,0 +1,30 @@
+object Form1: TForm1
+  Left = 1319
+  Height = 492
+  Top = 488
+  Width = 590
+  Caption = 'Form1'
+  ClientHeight = 492
+  ClientWidth = 590
+  DesignTimePPI = 120
+  LCLVersion = '3.8.0.0'
+  object Button1: TButton
+    Left = 216
+    Height = 72
+    Top = 224
+    Width = 142
+    Caption = 'Button1'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Left = 224
+    Height = 57
+    Top = 120
+    Width = 121
+    Caption = 'Label1'
+    Font.Height = -42
+    ParentFont = False
+    OnClick = Label1Click
+  end
+end
