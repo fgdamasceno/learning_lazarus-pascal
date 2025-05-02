@@ -1,0 +1,150 @@
+object FormCalculator: TFormCalculator
+  Left = 1064
+  Height = 500
+  Top = 334
+  Width = 800
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Simple Calculator'
+  ClientHeight = 500
+  ClientWidth = 800
+  DesignTimePPI = 120
+  Position = poScreenCenter
+  LCLVersion = '3.8.0.0'
+  object RadioGroupOperator: TRadioGroup
+    Left = 400
+    Height = 322
+    Top = 30
+    Width = 375
+    AutoFill = True
+    Caption = 'Operator'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 280
+    ClientWidth = 371
+    Font.Height = -27
+    ParentFont = False
+    TabOrder = 0
+    object RadioButtonAdd: TRadioButton
+      Left = 6
+      Height = 70
+      Top = 0
+      Width = 359
+      Caption = 'Add'
+      TabOrder = 0
+    end
+    object RadioButtonSubtract: TRadioButton
+      Left = 6
+      Height = 70
+      Top = 70
+      Width = 359
+      Caption = 'Subtract'
+      TabOrder = 1
+    end
+    object RadioButtonMultiply: TRadioButton
+      Left = 6
+      Height = 70
+      Top = 140
+      Width = 359
+      Caption = 'Multiply'
+      TabOrder = 2
+    end
+    object RadioButtonDivide: TRadioButton
+      Left = 6
+      Height = 70
+      Top = 210
+      Width = 359
+      Caption = 'Divide'
+      TabOrder = 3
+    end
+  end
+  object Label1: TLabel
+    Left = 30
+    Height = 37
+    Top = 30
+    Width = 153
+    Caption = 'First Number'
+    Font.Height = -27
+    ParentFont = False
+  end
+  object EditNum1: TEdit
+    Left = 30
+    Height = 45
+    Top = 72
+    Width = 330
+    Font.Height = -27
+    ParentFont = False
+    TabOrder = 1
+  end
+  object LabelSign: TLabel
+    Left = 30
+    Height = 59
+    Top = 136
+    Width = 29
+    Caption = '+'
+    Font.Height = -43
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 30
+    Height = 37
+    Top = 216
+    Width = 191
+    Caption = 'Second Number'
+    Font.Height = -27
+    ParentFont = False
+  end
+  object EditNum2: TEdit
+    Left = 30
+    Height = 45
+    Top = 256
+    Width = 330
+    Font.Height = -27
+    ParentFont = False
+    TabOrder = 2
+  end
+  object ButtonSubmit: TButton
+    Left = 30
+    Height = 54
+    Top = 416
+    Width = 160
+    Caption = 'Submit'
+    Font.Height = -27
+    ParentFont = False
+    TabOrder = 3
+  end
+  object ButtonClear: TButton
+    Left = 320
+    Height = 54
+    Top = 416
+    Width = 160
+    Caption = 'Clear'
+    Font.Height = -27
+    ParentFont = False
+    TabOrder = 4
+  end
+  object ButtonQuit: TButton
+    Left = 615
+    Height = 54
+    Top = 416
+    Width = 160
+    Caption = 'Quit'
+    Font.Height = -27
+    ParentFont = False
+    TabOrder = 5
+  end
+  object LabelAnswer: TLabel
+    Left = 30
+    Height = 37
+    Top = 336
+    Width = 150
+    Caption = 'LabelAnswer'
+    Font.Height = -27
+    ParentFont = False
+  end
+end
